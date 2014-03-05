@@ -2,7 +2,11 @@
   "name": "argo-tabs",
   "version": "0.0.1",
   "dependencies": {
-    "connect": "2.6.x"
+    "connect": "2.6.x",
+    "jade": "~1.3.0",
+    "client-templates": "0.0.4",
+    "stylus": "~0.42.3",
+    "coffee-script": "~1.7.1"
   },
   "engines": {
     "node": "0.8.x",

@@ -1,4 +1,4 @@
-define ['jquery', 'B64', 'cookies', 'opencontroller', 'alertcontroller', 'tournament', 'backends', 'localbackend', 'routes/routes', 'util', 'round', 'components', 'editable-table', 'angular-route'], ($, B64, Cookies, OpenController, AlertController, Tournament, Backends, LocalBackend, Routes, Util, Round) ->
+define ['jquery', 'B64', 'cookies', 'opencontroller', 'alertcontroller', 'tournament', 'backends', 'localbackend', 'routes/routes', 'util', 'round', 'templates', 'components', 'editable-table', 'angular-route'], ($, B64, Cookies, OpenController, AlertController, Tournament, Backends, LocalBackend, Routes, Util, Round, templates) ->
   class UIController
     constructor: ->
       @app = app = angular.module 'argotabs', ['components', 'editable-table', 'ngRoute']

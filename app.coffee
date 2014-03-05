@@ -1,10 +1,10 @@
-ignore_files: ['_*', '.*.swp', '.*.swo', 'readme*', '.gitignore', '.DS_Store']
-ignore_folders: ['.git']
+templates = require('client-templates')
 
-watcher_ignore_files: ['.*.swp', '.*.swo']
-watcher_ignore_folders: ['components']
+module.exports = 
+  ignore_files: ['_*', '.*.swp', '.*.swo', 'readme*', '.gitignore', '.DS_Store']
+  ignore_folders: ['.git', 'node_modules']
 
-layouts:
-  'index.jade': 'layout.jade'
+  watcher_ignore_files: ['.*.swp', '.*.swo']
+  watcher_ignore_folders: ['components']
 
-templates: 'views/templates'
+  extensions: [templates(base: 'views/templates/')]

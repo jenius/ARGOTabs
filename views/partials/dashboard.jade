@@ -1,6 +1,6 @@
 .well.well-large
   .heading
-    text-edit-cell(bind='tournament.name').heading
+    text-edit-cell(bind="tournament.name").heading
       i.fa.fa-fw.fa-edit.bottom-line
     table.stats
       tr
@@ -24,7 +24,7 @@
       div
         span Allow shadow judges:
         label.checkbox.inline
-          input(type='checkbox' ng-model='tournament.allowShadows')
+          input(type='checkbox', ng-model='tournament.allowShadows')
           span {{yesNo(tournament.allowShadows, "Yes", "No")}}
 
     .well.settings-group.high-low-group
@@ -36,10 +36,10 @@
       div.radio-container
         div Even brackets by:
         label
-          input(type='radio', ng-model='tournament.evenBrackets', ng-value='0')&nbsp;
+          input(type='radio', ng-model='tournament.evenBrackets', ng-value='0') 
           span pulling down leftover teams
         label
-          input(type='radio', ng-model='tournament.evenBrackets', ng-value='1')&nbsp;
+          input(type='radio', ng-model='tournament.evenBrackets', ng-value='1') 
           span pulling up teams with weakest previous opponents
     .well.pair-rules-group.settings-group
       strong Pairing rank criteria
@@ -73,7 +73,7 @@
       div
         span Use idle mains as shadows:
         label.checkbox.inline
-          input(type='checkbox' ng-model='tournament.judgeShadowReport')
+          input(type='checkbox', ng-model='tournament.judgeShadowReport')
           span {{yesNo(tournament.judgeShadowReport, "Yes", "No")}}
       div(ng-show='tournament.judgeShadowReport')
         multi-cell(bind='tournament.judgeShadowPriority', input-width='255', choices='priorityChoices', choice-name='priorityChoiceNames[o]')
