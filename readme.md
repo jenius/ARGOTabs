@@ -1,6 +1,16 @@
 ARGO Tabs
-=================
+=========
+
 Tabulation software for World Schools Debate competitions with an UX-driven philosophy.
+
+Usage
+-----
+
+- Make sure [node.js](http://nodejs.org) is installed
+- Run `npm install roots@3.0.0-rc.3`
+- Run `roots watch`
+- ???
+- Profit!
 
 Planned features
 -----------------
